@@ -1,0 +1,54 @@
+footer
+  .footer_top
+    .container
+      h3 Get in touch
+      .social
+        ul
+          li
+            a(href='')
+              i.facebook  
+          li
+            a(href='')
+              i.twitter  
+          li
+            a(href='')
+              i.google  
+          li
+            a(href='')
+              i.linkedin  
+          .clear  
+      p Subscribe to our newsletter to stay update with what is new
+      .footer_form
+        form(method='post', action='#')
+          input.textbox(type='text', value='Email Address', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = 'Email Address';}")
+          input(type='submit', value='Subscribe')
+  .footer-bottom
+    .container
+      .copy
+        p
+          | © 2016 
+          a Your Company
+  script(type='text/javascript').
+    $(document).ready(function() {
+    /*
+    var defaults = {
+    containerID: 'toTop', // fading element id
+    containerHoverID: 'toTopHover', // fading element hover id
+    scrollSpeed: 1200,
+    easingType: 'linear'
+    };
+    */
+    $().UItoTop({ easingType: 'easeOutQuart' });
+    });
+  a#toTop(href='#', style='display: block;')
+    span#toTopHover(style='opacity: 1;')  
+
+  
+!= js()
+script(type='text/javascript').
+  jQuery(document).ready(function($) {
+  $(".scroll").click(function(event){
+  event.preventDefault();
+  $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+  });
+  });

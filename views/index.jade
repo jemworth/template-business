@@ -1,0 +1,182 @@
+extends layout
+
+block content
+  #home.slider
+    .slider_container
+      .wmuSlider.example1
+        .wmuSliderWrapper
+          article(style='position: absolute; width: 100%; opacity: 0;')
+            .banner-wrap
+              .slider-left
+                h1 We Providing
+                p.top Social media marketing for businesses
+                ul.button
+                  li
+                    a(href='#') Free Consultation
+          article(style='position: relative; width: 100%; opacity: 1;')
+            .banner-wrap
+              .slider-left
+                h1 hendrer vulpu
+                p.top diam nonummy nibh euismod tincidunt
+                ul.button
+                  li
+                    a(href='#') Free Consultation
+      script(src='js/jquery.wmuSlider.js')
+      script.
+        $('.example1').wmuSlider();
+  .main
+    #about.about
+      .container
+        .gallery-head.text-center
+          h3 About Us
+          p We are added our major Services
+          span  
+        .row.text-center
+          .col-md-4.about_grid
+            i.icon1  
+            h3
+              a(href='#') Facebook Marketing
+            p
+              | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+          .col-md-4.about_grid
+            i.icon2  
+            h3
+              a(href='#') Landing pages Creation
+            p
+              | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+          .col-md-4.about_grid
+            i.icon3  
+            h3
+              a(href='#') Ads management
+            p
+              | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+    #app.approach
+      .container
+        .gallery-head.text-center
+          h3 Our Approach
+          p Check Our Approaches step by step (how we do it)
+          span  
+        ul.list1
+          li.list1_img
+            img.img-responsive(src='./img/pic1.jpg', alt='')
+          li.list1_desc
+            h3
+              a(href='#') Step 1: Heading Here
+            p
+              | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequa
+          p.no
+            | 1
+            br
+            span Step
+          .clearfix  
+        ul.list2
+          li.list1_desc
+            h3
+              a(href='#') Step 2: Heading Here
+            p
+              | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequa
+          li.list1_img
+            img.img-responsive(src='./img/pic2.jpg', alt='')
+          p.no
+            | 2
+            br
+            span Step
+          .clearfix  
+        ul.list1
+          li.list1_img
+            img.img-responsive(src='./img/pic3.jpg', alt='')
+          li.list1_desc
+            h3
+              a(href='#') Step 3: Heading Here
+            p
+              | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequa
+          p.no
+            | 3
+            br
+            span Step
+          .clearfix  
+        ul.list2
+          li.list1_desc
+            h3
+              a(href='#') Step 4: Heading Here
+            p
+              | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequa
+          li.list1_img
+            img.img-responsive(src='./img/pic4.jpg', alt='')
+          p.no
+            | 4
+            br
+            span Step
+          .clearfix  
+    #work.work
+      .container
+        .work_top.text-center
+          h3 Our Work
+          p We are added our featured works below
+          span  
+        .col_1_of_4.span_1_of_4
+          .port-grid
+            .port-grid-text
+              img(src='./img/arrow_icon.png', alt='')
+              h3 Project Name
+              p Facebook Marketing
+            .port-grid-pic.block.last
+              a.b-link-stripe.b-animate-go.thickbox(href='#')
+                img.img-responsive(src='./img/w1.jpg', style='top: 0px;')
+                .b-wrapper
+                  h2.b-animate.b-from-left.b-delay03
+                    img(src='./img/plus.png', alt='', style='top: 0px;')
+            .clearfix  
+        .col_1_of_4.span_1_of_4
+          .port-grid
+            .port-grid-text
+              img(src='./img/arrow_icon.png', alt='')
+              h3 Project Name
+              p Landing Page
+            .port-grid-pic.block.last
+              a.b-link-stripe.b-animate-go.thickbox(href='#')
+                img.img-responsive(src='./img/w2.jpg', style='top: 0px;')
+                .b-wrapper
+                  h2.b-animate.b-from-left.b-delay03
+                    img(src='./img/plus.png', alt='', style='top: 0px;')
+            .clearfix  
+        .col_1_of_4.span_1_of_4
+          .port-grid
+            .port-grid-pic.block.last
+              a.b-link-stripe.b-animate-go.thickbox(href='#')
+                img.img-responsive(src='./img/w3.jpg', style='top: 0px;')
+                .b-wrapper
+                  h2.b-animate.b-from-left.b-delay03
+                    img(src='./img/plus.png', alt='', style='top: 0px;')
+            .port-grid-text
+              img(src='./img/arrow_icon.png', alt='')
+              h3 Project Name
+              p Facebook Marketing
+            .clearfix  
+        .col_1_of_4.span_1_of_4
+          .port-grid
+            .port-grid-pic.block.last
+              a.b-link-stripe.b-animate-go.thickbox(href='#')
+                img.img-responsive(src='./img/w4.jpg', style='top: 0px;')
+                .b-wrapper
+                  h2.b-animate.b-from-left.b-delay03
+                    img(src='./img/plus.png', alt='', style='top: 0px;')
+            .port-grid-text
+              img(src='./img/arrow_icon.png', alt='')
+              h3 Project Name
+              p Landing Page
+            .clearfix  
+    .contact
+      .container
+        .work_top.text-center
+          h3 Get Your Facebook Ananlysis Now
+          p Enter your details below
+          span  
+        .contact-form_grid
+          p
+            | diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam
+          form(method='post')
+            input.textbox(type='text', value='Your name', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = 'Your name';}")
+            input.textbox(type='text', value='Contact Number', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = 'Contact Number';}")
+            input.textbox(type='text', value='Company Name', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = 'Company Name';}")
+            input(type='submit', value='Submit Now')
